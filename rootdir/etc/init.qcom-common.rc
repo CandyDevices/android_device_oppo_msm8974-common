@@ -260,6 +260,10 @@ on post-fs-data
     # Create folder for mm-qcamera-daemon
     mkdir /data/camera 0770 media camera
 
+    # Create /data/system folder for LockSettingsStorage
+    mkdir /data/system 0775
+    chown system system /data/system
+
     # Create PERFD deamon related dirs
     mkdir /data/misc/perfd 0755 root system
     chmod 2755 /data/misc/perfd
