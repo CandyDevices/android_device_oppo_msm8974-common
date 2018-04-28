@@ -3,3 +3,6 @@ allow untrusted_app_25 sysfs:file { getattr read };
 allow untrusted_app_25 sysfs_battery_supply:lnk_file read;
 allow untrusted_app_25 sysfs_leds:dir read;
 
+allow untrusted_app_25 qemu_hw_mainkeys_prop:file read;
+allow untrusted_app_25 rootfs:dir read;
+

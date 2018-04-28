@@ -8,3 +8,5 @@ r_dir_file(system_server, sysfs_usb_supply);
 # unlink system file
 allow system_server unlabeled:file unlink;
 
+# crash reporting support
+allow system_server crash_dump:process getpgid;

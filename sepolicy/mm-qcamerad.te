@@ -1,5 +1,7 @@
 allow mm-qcamerad priv_app:fd use;
 allow mm-qcamerad untrusted_app:fd use;
+allow mm-qcamerad platform_app:fd use;
 
-allow mm-qcamerad system_data_file:dir write;
+allow mm-qcamerad system_data_file:dir { write add_name };
 allow mm-qcamerad untrusted_app_25:fd use;
+
