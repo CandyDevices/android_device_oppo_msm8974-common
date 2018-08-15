@@ -68,6 +68,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    OneplusDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl
